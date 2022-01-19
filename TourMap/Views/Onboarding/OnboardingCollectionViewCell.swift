@@ -8,5 +8,10 @@
 import UIKit
 
 class OnboardingCollectionViewCell: UICollectionViewCell {
-    
+  @IBOutlet weak var titleLabel: UILabel!
+  @IBOutlet weak var desciptionLabel: UILabel!
+  @IBOutlet weak var onboardingImageView: UIImageView!
+  
+  @IBAction func getStartedButton(_ sender: Any) {
+  }
 }
