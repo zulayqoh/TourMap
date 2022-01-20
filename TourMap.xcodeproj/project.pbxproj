@@ -67,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				CE650765279966C7008F1717 /* AppDelegates */,
+				CE5D4C77279807A000EDC5F1 /* Extensions */,
 				CE5D4C74279804CD00EDC5F1 /* Onboarding */,
 				CE184D342793381500535889 /* Main.storyboard */,
 				CE184D392793381700535889 /* LaunchScreen.storyboard */,
@@ -95,7 +96,6 @@
 		CE5D4C732798047D00EDC5F1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CE5D4C77279807A000EDC5F1 /* Extensions */,
 				CE5D4C752798050E00EDC5F1 /* OnboardingViewController.swift */,
 				CE5D4C7D2798154B00EDC5F1 /* OnboardingCollectionViewCell.swift */,
 			);
