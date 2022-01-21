@@ -11,5 +11,5 @@ import UIKit
 struct OnboardingData {
   let title: String
   let description: String
-  let image: String
+  let image: UIImage
 }

@@ -17,7 +17,7 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
   func setupOnboardingView(with data: OnboardingData) {
     titleLabel.text = data.title
     desciptionLabel.text = data.description
-    onboardingImageView.image = UIImage(named: data.image)
+    onboardingImageView.image = data.image
   }
   
   @IBAction func getStartedButton(_ sender: Any) {
