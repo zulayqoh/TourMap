@@ -15,11 +15,14 @@ class OnboardingViewController: UIViewController {
   @IBOutlet weak var pageControl: UIPageControl!
   
   override func viewDidLoad() {
-        super.viewDidLoad()
+    super.viewDidLoad()
     collectionView.delegate = self
     collectionView.dataSource = self
-    }
-
+  }
+  
+  @IBAction func getStartedButton(_ sender: UIButton) {
+    navigationController?.pushViewController(SetupViewController(), animated: true)
+  }
 }
 
 extension OnboardingViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
@@ -41,6 +44,5 @@ extension OnboardingViewController: UICollectionViewDataSource, UICollectionView
     activePage = Int(scrollView.contentOffset.x/width)
     pageControl.currentPage = activePage
   }
-  
   
 }

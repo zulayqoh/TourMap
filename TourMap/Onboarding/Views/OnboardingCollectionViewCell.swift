@@ -20,6 +20,4 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
     onboardingImageView.image = data.image
   }
   
-  @IBAction func getStartedButton(_ sender: Any) {
-  }
 }

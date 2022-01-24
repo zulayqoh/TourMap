@@ -19,6 +19,10 @@
 		CE5D4C7E2798154B00EDC5F1 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5D4C7D2798154B00EDC5F1 /* OnboardingCollectionViewCell.swift */; };
 		CE5D4CAC27982AEB00EDC5F1 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE5D4CAB27982AEB00EDC5F1 /* Poppins-Regular.ttf */; };
 		CE7EEB99279AA315006347F1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7EEB98279AA315006347F1 /* Constants.swift */; };
+		CEFEF51A279C0DF70066584C /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF519279C0DF70066584C /* SetupView.swift */; };
+		CEFEF51C279C0E690066584C /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF51B279C0E690066584C /* SetupViewController.swift */; };
+		CEFEF51F279C59D40066584C /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF51E279C59D40066584C /* TitleLabel.swift */; };
+		CEFEF521279C59E50066584C /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF520279C59E50066584C /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		CE5D4C7D2798154B00EDC5F1 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		CE5D4CAB27982AEB00EDC5F1 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		CE7EEB98279AA315006347F1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CEFEF519279C0DF70066584C /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		CEFEF51B279C0E690066584C /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
+		CEFEF51E279C59D40066584C /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
+		CEFEF520279C59E50066584C /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +76,8 @@
 		CE184D2D2793381500535889 /* TourMap */ = {
 			isa = PBXGroup;
 			children = (
+				CEFEF51D279C59A20066584C /* CustomViews */,
+				CEFEF515279C0CAF0066584C /* SetupPage */,
 				CE7EEB9A279AE2F7006347F1 /* Utilities */,
 				CE650765279966C7008F1717 /* AppDelegates */,
 				CE5D4C77279807A000EDC5F1 /* Extensions */,
@@ -165,6 +175,48 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		CEFEF515279C0CAF0066584C /* SetupPage */ = {
+			isa = PBXGroup;
+			children = (
+				CEFEF516279C0D0D0066584C /* Model */,
+				CEFEF517279C0D180066584C /* View */,
+				CEFEF518279C0D2E0066584C /* ViewModel */,
+			);
+			path = SetupPage;
+			sourceTree = "<group>";
+		};
+		CEFEF516279C0D0D0066584C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEFEF517279C0D180066584C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEFEF519279C0DF70066584C /* SetupView.swift */,
+				CEFEF51B279C0E690066584C /* SetupViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEFEF518279C0D2E0066584C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CEFEF51D279C59A20066584C /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				CEFEF51E279C59D40066584C /* TitleLabel.swift */,
+				CEFEF520279C59E50066584C /* CustomButton.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -239,9 +291,13 @@
 			files = (
 				CE4A9D9627986F3800F19BD5 /* OnboardingData.swift in Sources */,
 				CE184D2F2793381500535889 /* AppDelegate.swift in Sources */,
+				CEFEF51F279C59D40066584C /* TitleLabel.swift in Sources */,
 				CE184D312793381500535889 /* SceneDelegate.swift in Sources */,
 				CE5D4C7E2798154B00EDC5F1 /* OnboardingCollectionViewCell.swift in Sources */,
+				CEFEF51C279C0E690066584C /* SetupViewController.swift in Sources */,
+				CEFEF51A279C0DF70066584C /* SetupView.swift in Sources */,
 				CE5D4C7A2798087100EDC5F1 /* UIView+Extension.swift in Sources */,
+				CEFEF521279C59E50066584C /* CustomButton.swift in Sources */,
 				CE4A9D992798975200F19BD5 /* OnboardingViewModel.swift in Sources */,
 				CE5D4C762798050E00EDC5F1 /* OnboardingViewController.swift in Sources */,
 				CE7EEB99279AA315006347F1 /* Constants.swift in Sources */,
