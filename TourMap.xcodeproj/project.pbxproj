@@ -76,9 +76,9 @@
 		CE184D2D2793381500535889 /* TourMap */ = {
 			isa = PBXGroup;
 			children = (
+				CE7EEB9A279AE2F7006347F1 /* Utilities */,
 				CEFEF51D279C59A20066584C /* CustomViews */,
 				CEFEF515279C0CAF0066584C /* SetupPage */,
-				CE7EEB9A279AE2F7006347F1 /* Utilities */,
 				CE650765279966C7008F1717 /* AppDelegates */,
 				CE5D4C77279807A000EDC5F1 /* Extensions */,
 				CE5D4C74279804CD00EDC5F1 /* Onboarding */,
