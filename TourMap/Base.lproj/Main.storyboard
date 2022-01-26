@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ui7-J7-Kqb">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -28,7 +28,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingCollectionViewCell" id="5ej-Ze-ted" customClass="OnboardingCollectionViewCell" customModule="TourMap" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="414" height="652"/>
+                                        <rect key="frame" x="0.0" y="48" width="414" height="652"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="526-sH-s6h">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="652"/>
@@ -75,7 +75,7 @@ euismod tincidunt ut laoreet dolore.</string>
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                             <connections>
-                                                                <action selector="getStartedButton:" destination="5ej-Ze-ted" eventType="touchUpInside" id="qle-Kw-24q"/>
+                                                                <action selector="getStartedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cSJ-aJ-DVM"/>
                                                             </connections>
                                                         </button>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HfW-5Q-FNj">
@@ -122,12 +122,31 @@ euismod tincidunt ut laoreet dolore.</string>
                             <constraint firstItem="wXE-z8-JA4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tjq-HN-5Mj"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="rvh-6h-Cal"/>
                     <connections>
                         <outlet property="collectionView" destination="NYK-wW-wBz" id="cAq-HM-P2j"/>
                         <outlet property="pageControl" destination="wXE-z8-JA4" id="uPW-iI-lxa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="655.07246376811599" y="-41.517857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="AxP-N1-c8e">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ui7-J7-Kqb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bIq-wz-MPZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Lbj-Eh-iY3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="boK-8O-NeC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-255.07246376811597" y="-41.517857142857139"/>
         </scene>
