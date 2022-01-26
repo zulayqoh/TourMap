@@ -38,7 +38,7 @@ class SetupViews: UIView {
   }
   
   func setupCreateButton() {
-    createAccountButton.setTitle(Constant.K.createAccount, for: .normal)
+    createAccountButton.setTitle(Constant.StringContent.createAccount, for: .normal)
     addSubview(createAccountButton)
     
     NSLayoutConstraint.activate([
@@ -50,7 +50,7 @@ class SetupViews: UIView {
   }
   
   func setupLoginButton() {
-    loginButton.setTitle(Constant.K.login, for: .normal)
+    loginButton.setTitle(Constant.StringContent.login, for: .normal)
     addSubview(loginButton)
     
     NSLayoutConstraint.activate([

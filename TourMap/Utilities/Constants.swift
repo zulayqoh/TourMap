@@ -19,7 +19,7 @@ struct Constant {
     static let buttonHeight = CGFloat(50)
   }
   
-  struct K {
+  struct StringContent {
     static let createAccount = "Create Account"
     static let login = "Login"
   }
