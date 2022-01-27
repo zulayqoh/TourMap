@@ -19,6 +19,8 @@
 		CE5D4C7E2798154B00EDC5F1 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5D4C7D2798154B00EDC5F1 /* OnboardingCollectionViewCell.swift */; };
 		CE5D4CAC27982AEB00EDC5F1 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE5D4CAB27982AEB00EDC5F1 /* Poppins-Regular.ttf */; };
 		CE7EEB99279AA315006347F1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7EEB98279AA315006347F1 /* Constants.swift */; };
+		CE99A00827A217DD00050022 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99A00727A217DD00050022 /* SignUpViewController.swift */; };
+		CE99A00C27A2182600050022 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99A00B27A2182600050022 /* SignInViewController.swift */; };
 		CEFEF51A279C0DF70066584C /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF519279C0DF70066584C /* SetupView.swift */; };
 		CEFEF51C279C0E690066584C /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF51B279C0E690066584C /* SetupViewController.swift */; };
 		CEFEF51F279C59D40066584C /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF51E279C59D40066584C /* TitleLabel.swift */; };
@@ -40,6 +42,8 @@
 		CE5D4C7D2798154B00EDC5F1 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		CE5D4CAB27982AEB00EDC5F1 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		CE7EEB98279AA315006347F1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CE99A00727A217DD00050022 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		CE99A00B27A2182600050022 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		CEFEF519279C0DF70066584C /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
 		CEFEF51B279C0E690066584C /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
 		CEFEF51E279C59D40066584C /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
@@ -76,15 +80,17 @@
 		CE184D2D2793381500535889 /* TourMap */ = {
 			isa = PBXGroup;
 			children = (
+				CE650765279966C7008F1717 /* AppDelegates */,
+				CE5D4C802798211600EDC5F1 /* Resources */,
 				CE7EEB9A279AE2F7006347F1 /* Utilities */,
 				CEFEF51D279C59A20066584C /* CustomViews */,
-				CEFEF515279C0CAF0066584C /* SetupPage */,
-				CE650765279966C7008F1717 /* AppDelegates */,
 				CE5D4C77279807A000EDC5F1 /* Extensions */,
 				CE5D4C74279804CD00EDC5F1 /* Onboarding */,
+				CEFEF515279C0CAF0066584C /* SetupPage */,
+				CE99A00527A217B900050022 /* SignUp */,
+				CE99A00927A2180D00050022 /* SignIn */,
 				CE184D342793381500535889 /* Main.storyboard */,
 				CE184D392793381700535889 /* LaunchScreen.storyboard */,
-				CE5D4C802798211600EDC5F1 /* Resources */,
 				CE5D4C7F27981D3400EDC5F1 /* SupportingFiles */,
 			);
 			path = TourMap;
@@ -173,6 +179,38 @@
 				CE7EEB98279AA315006347F1 /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CE99A00527A217B900050022 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				CE99A00627A217C600050022 /* View */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		CE99A00627A217C600050022 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE99A00727A217DD00050022 /* SignUpViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE99A00927A2180D00050022 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				CE99A00A27A2181600050022 /* View */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		CE99A00A27A2181600050022 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE99A00B27A2182600050022 /* SignInViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		CEFEF515279C0CAF0066584C /* SetupPage */ = {
@@ -289,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE99A00C27A2182600050022 /* SignInViewController.swift in Sources */,
 				CE4A9D9627986F3800F19BD5 /* OnboardingData.swift in Sources */,
 				CE184D2F2793381500535889 /* AppDelegate.swift in Sources */,
 				CEFEF51F279C59D40066584C /* TitleLabel.swift in Sources */,
@@ -300,6 +339,7 @@
 				CEFEF521279C59E50066584C /* CustomButton.swift in Sources */,
 				CE4A9D992798975200F19BD5 /* OnboardingViewModel.swift in Sources */,
 				CE5D4C762798050E00EDC5F1 /* OnboardingViewController.swift in Sources */,
+				CE99A00827A217DD00050022 /* SignUpViewController.swift in Sources */,
 				CE7EEB99279AA315006347F1 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

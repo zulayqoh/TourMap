@@ -17,6 +17,10 @@ class SetupViewController: UIViewController {
     configureSetupPage()
   }
   func configureSetupPage() {
+    setupPage.loginButton.addTarget(self, action: #selector(loginButtonClicked), for: .touchUpInside)
+    setupPage.createButtonPressed = { [weak self] in
+      self?.navigationController?.pushViewController(SignUpViewController(), animated: true)
+    }
     setupPage.translatesAutoresizingMaskIntoConstraints = false
     view.addSubview(setupPage)
 
@@ -26,6 +30,9 @@ class SetupViewController: UIViewController {
       setupPage.leadingAnchor.constraint(equalTo: view.leadingAnchor),
       setupPage.trailingAnchor.constraint(equalTo: view.trailingAnchor)
     ])
+  }
+  @objc func loginButtonClicked() {
+    navigationController?.pushViewController(SignInViewController(), animated: true)
   }
   
 }
