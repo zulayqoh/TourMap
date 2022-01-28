@@ -6,3 +6,9 @@
 //
 
 import Foundation
+import UIKit
+
+//struct SignUpViewData {
+//  let modelName: Array<String>
+//  let iconName: Array<String>
+//}
