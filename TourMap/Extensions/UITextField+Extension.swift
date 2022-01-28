@@ -7,14 +7,13 @@
 
 import UIKit
 
-class UITextField_Extension: UIView {
+extension UITextField {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    func setRightImage(imageName: String) {
+
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 15, height: 15))
+        imageView.image = UIImage(systemName: imageName)
+        self.rightView = imageView;
+        self.rightViewMode = .always
     }
-    */
-
 }
