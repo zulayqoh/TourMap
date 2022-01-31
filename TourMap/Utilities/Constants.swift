@@ -41,5 +41,6 @@ struct Constant {
     static let poppinsRegular20 = UIFont(name: "Poppins-Regular", size: 20)
     static let poppinsSemibold33 = UIFont(name: "Poppins-SemiBold", size: 33)
     static let poppinsRegular16 = UIFont(name: "Poppins-Regular", size: 16)
+    static let poppinsRegular12 = UIFont(name: "Poppins-Regular", size: 12)
   }
 }

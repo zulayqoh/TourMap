@@ -19,6 +19,7 @@ class CustomTextField: UITextField {
   }
   
   func configureTextField() {
+    translatesAutoresizingMaskIntoConstraints = false
     backgroundColor = .white
     borderStyle = UITextField.BorderStyle.none
     rightView?.tintColor = Constant.Color.textFieldIconColor
