@@ -22,6 +22,7 @@ struct Constant {
   struct StringContent {
     static let createAccount = "Create Account"
     static let login = "Login"
+    static let signUp = "Sign Up"
   }
   
   struct Image {
@@ -33,9 +34,12 @@ struct Constant {
   
   struct Color {
     static let buttonBackground = UIColor(red:0.95, green:0.50, blue:0.00, alpha:1.0)
+    static let textFieldIconColor = UIColor(red:0.27, green:0.24, blue:0.79, alpha:1.0)
   }
   
   struct Font {
     static let poppinsRegular20 = UIFont(name: "Poppins-Regular", size: 20)
+    static let poppinsSemibold33 = UIFont(name: "Poppins-SemiBold", size: 33)
+    static let poppinsRegular16 = UIFont(name: "Poppins-Regular", size: 16)
   }
 }

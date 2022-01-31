@@ -8,7 +8,7 @@ import Foundation
 import UIKit
 
 class SetupViews: UIView {
-  
+  var createButtonPressed = {}
   let createAccountButton = CustomButton()
   let loginButton = CustomButton()
   let setupBackground: UIImageView = {
@@ -38,6 +38,7 @@ class SetupViews: UIView {
   }
   
   func setupCreateButton() {
+    createAccountButton.addTarget(self, action: #selector(createButtonClicked), for: .touchUpInside)
     createAccountButton.setTitle(Constant.StringContent.createAccount, for: .normal)
     addSubview(createAccountButton)
     
@@ -65,5 +66,8 @@ class SetupViews: UIView {
     addSetupBackgroundImage()
     setupCreateButton()
     setupLoginButton()
+  }
+  @objc func createButtonClicked() {
+    createButtonPressed()
   }
 }

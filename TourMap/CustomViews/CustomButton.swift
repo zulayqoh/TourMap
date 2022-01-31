@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 class CustomButton: UIButton {
+  var createButtonPressed: (() -> ())?
   
   // MARK: - INITIALIZERS
   override init(frame: CGRect) {
@@ -22,9 +23,13 @@ class CustomButton: UIButton {
   
   // MARK: - CUSTOM FUNCTIONS
   private func configure() {
+    addTarget(self, action: #selector(createButtonClicked), for: .touchUpInside)
     layer.cornerRadius = 25
     titleLabel?.textColor = .white
     titleLabel?.font = Constant.Font.poppinsRegular20
     translatesAutoresizingMaskIntoConstraints = false
+  }
+  @objc func createButtonClicked() {
+    createButtonPressed?()
   }
 }
