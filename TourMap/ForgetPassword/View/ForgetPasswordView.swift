@@ -90,7 +90,6 @@ class ForgetPasswordView: UIView {
       phoneNumberTextField.widthAnchor.constraint(equalTo: backgroundView.widthAnchor, multiplier: 0.9),
       phoneNumberTextField.heightAnchor.constraint(equalToConstant: 50)
     ])
-    
   }
   
   private func addForgetPasswordView() {

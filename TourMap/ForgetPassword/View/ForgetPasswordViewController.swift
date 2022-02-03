@@ -19,6 +19,7 @@ class ForgetPasswordViewController: UIViewController {
   }
   
   func configureForgetPasswordPage() {
+    forgetPasswordPage.sendButton.addTarget(self, action: #selector(sendButtonClicked), for: .touchUpInside)
     forgetPasswordPage.translatesAutoresizingMaskIntoConstraints = false
     view.addSubview(forgetPasswordPage)
     
@@ -28,5 +29,9 @@ class ForgetPasswordViewController: UIViewController {
       forgetPasswordPage.leadingAnchor.constraint(equalTo: view.leadingAnchor),
       forgetPasswordPage.trailingAnchor.constraint(equalTo: view.trailingAnchor)
     ])
+  }
+  
+  @objc func sendButtonClicked() {
+    navigationController?.pushViewController(VerificationPageViewController(), animated: true)
   }
 }
