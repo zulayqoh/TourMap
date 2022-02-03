@@ -31,6 +31,8 @@
 		CEDAB57627A4752300138475 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDAB57527A4752300138475 /* SignUpModel.swift */; };
 		CEE195F027ABF867002DCE1B /* ForgetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE195EF27ABF867002DCE1B /* ForgetPasswordView.swift */; };
 		CEE195F227AC04F6002DCE1B /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE195F127AC04F6002DCE1B /* ForgetPasswordViewController.swift */; };
+		CEE195F827AC1C3F002DCE1B /* VerificationPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE195F727AC1C3F002DCE1B /* VerificationPageView.swift */; };
+		CEE195FA27AC233C002DCE1B /* VerificationPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE195F927AC233C002DCE1B /* VerificationPageViewController.swift */; };
 		CEFEF51A279C0DF70066584C /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF519279C0DF70066584C /* SetupView.swift */; };
 		CEFEF51C279C0E690066584C /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF51B279C0E690066584C /* SetupViewController.swift */; };
 		CEFEF51F279C59D40066584C /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF51E279C59D40066584C /* TitleLabel.swift */; };
@@ -64,6 +66,8 @@
 		CEDAB57527A4752300138475 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
 		CEE195EF27ABF867002DCE1B /* ForgetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordView.swift; sourceTree = "<group>"; };
 		CEE195F127AC04F6002DCE1B /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		CEE195F727AC1C3F002DCE1B /* VerificationPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationPageView.swift; sourceTree = "<group>"; };
+		CEE195F927AC233C002DCE1B /* VerificationPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationPageViewController.swift; sourceTree = "<group>"; };
 		CEFEF519279C0DF70066584C /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
 		CEFEF51B279C0E690066584C /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
 		CEFEF51E279C59D40066584C /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
@@ -100,6 +104,7 @@
 		CE184D2D2793381500535889 /* TourMap */ = {
 			isa = PBXGroup;
 			children = (
+				CEE195F527AC1BD9002DCE1B /* VerificationPage */,
 				CE650765279966C7008F1717 /* AppDelegates */,
 				CE5D4C802798211600EDC5F1 /* Resources */,
 				CE7EEB9A279AE2F7006347F1 /* Utilities */,
@@ -235,8 +240,8 @@
 		CE99A00A27A2181600050022 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CE99A00B27A2182600050022 /* LogInViewController.swift */,
 				CE24987527A7EF1D009222AE /* LogInView.swift */,
+				CE99A00B27A2182600050022 /* LogInViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -269,6 +274,23 @@
 			children = (
 				CEE195EF27ABF867002DCE1B /* ForgetPasswordView.swift */,
 				CEE195F127AC04F6002DCE1B /* ForgetPasswordViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEE195F527AC1BD9002DCE1B /* VerificationPage */ = {
+			isa = PBXGroup;
+			children = (
+				CEE195F627AC1C15002DCE1B /* View */,
+			);
+			path = VerificationPage;
+			sourceTree = "<group>";
+		};
+		CEE195F627AC1C15002DCE1B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEE195F727AC1C3F002DCE1B /* VerificationPageView.swift */,
+				CEE195F927AC233C002DCE1B /* VerificationPageViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -397,6 +419,7 @@
 				CE184D2F2793381500535889 /* AppDelegate.swift in Sources */,
 				CEFEF51F279C59D40066584C /* TitleLabel.swift in Sources */,
 				CEDAB57627A4752300138475 /* SignUpModel.swift in Sources */,
+				CEE195FA27AC233C002DCE1B /* VerificationPageViewController.swift in Sources */,
 				CE184D312793381500535889 /* SceneDelegate.swift in Sources */,
 				CE5D4C7E2798154B00EDC5F1 /* OnboardingCollectionViewCell.swift in Sources */,
 				CEFEF51C279C0E690066584C /* SetupViewController.swift in Sources */,
@@ -413,6 +436,7 @@
 				CEA0709627A3DC32004C6C83 /* CustomTextField.swift in Sources */,
 				CEE195F027ABF867002DCE1B /* ForgetPasswordView.swift in Sources */,
 				CE7EEB99279AA315006347F1 /* Constants.swift in Sources */,
+				CEE195F827AC1C3F002DCE1B /* VerificationPageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

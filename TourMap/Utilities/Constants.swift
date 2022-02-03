@@ -41,11 +41,13 @@ struct Constant {
     static let onboardingImage3 = UIImage(named: "travels3")
     static let setupBackground = UIImage(named: "setup")
     static let forgetPassword = UIImage(named: "forgetPassword")
+    static let verify = UIImage(named: "verify")
   }
   
   struct Color {
     static let buttonBackground = UIColor(red:0.95, green:0.50, blue:0.00, alpha:1.0)
     static let textFieldIconColor = UIColor(red:0.27, green:0.24, blue:0.79, alpha:1.0)
+    static let resendLabelColor = UIColor(red:0.44, green:0.44, blue:0.44, alpha:1.0)
   }
   
   struct Font {
