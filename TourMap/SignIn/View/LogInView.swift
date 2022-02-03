@@ -8,6 +8,7 @@
 import UIKit
 
 class LogInView: UIView {
+  var forgotPasswordPressed = {}
   
   let logInTitleLabel = TitleLabel()
   let logInFieldView = CustomBackgroundView()
@@ -119,6 +120,7 @@ class LogInView: UIView {
   
   private func addForgotPasswordButton() {
     logInFieldView.addSubview(forgotPasswordButton)
+    forgotPasswordButton.addTarget(self, action: #selector(forgotPasswordButtonClicked), for: .touchUpInside)
     NSLayoutConstraint.activate([
       forgotPasswordButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 5),
       forgotPasswordButton.trailingAnchor.constraint(equalTo: logInFieldView.trailingAnchor, constant: -20)
@@ -133,5 +135,9 @@ class LogInView: UIView {
     addPasswordTextField()
     addSignUpButton()
     addForgotPasswordButton()
+  }
+  
+  @objc func forgotPasswordButtonClicked() {
+    forgotPasswordPressed()
   }
 }

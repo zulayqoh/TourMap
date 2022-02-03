@@ -8,7 +8,7 @@
 import UIKit
 
 class LogInViewController: UIViewController {
-  let LogInPage = LogInView()
+  let logInPage = LogInView()
   override func viewDidLoad() {
     super.viewDidLoad()
     view.backgroundColor = .white
@@ -16,16 +16,19 @@ class LogInViewController: UIViewController {
     configureLogInPage()
   }
   func configureLogInPage() {
-
-    LogInPage.translatesAutoresizingMaskIntoConstraints = false
-    view.addSubview(LogInPage)
+    logInPage.forgotPasswordPressed = { [weak self] in
+      self?.navigationController?.pushViewController(ForgetPasswordViewController(), animated: true)
+    }
+    logInPage.translatesAutoresizingMaskIntoConstraints = false
+    view.addSubview(logInPage)
 
     NSLayoutConstraint.activate([
-      LogInPage.topAnchor.constraint(equalTo: view.topAnchor),
-      LogInPage.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-      LogInPage.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-      LogInPage.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+      logInPage.topAnchor.constraint(equalTo: view.topAnchor),
+      logInPage.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+      logInPage.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+      logInPage.trailingAnchor.constraint(equalTo: view.trailingAnchor)
     ])
   }
+  
   
 }
