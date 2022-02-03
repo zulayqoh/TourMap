@@ -23,6 +23,16 @@ struct Constant {
     static let createAccount = "Create Account"
     static let login = "Login"
     static let signUp = "Sign Up"
+    static let forgetPassword = "Forget Password"
+    static let send = "Send"
+    static let verificationCode = "Verification code"
+    static let verify = "Verify"
+    static let name = "Name"
+    static let email = "Email"
+    static let password = "Password"
+    static let confirmPassword = "Confirm password"
+    static let phoneNumber = "Phone Number"
+    static let enterYourVerificationCode = "Enter Your Verification Code"
   }
   
   struct Image {
@@ -30,6 +40,7 @@ struct Constant {
     static let onboardingImage2 = UIImage(named: "travels2")
     static let onboardingImage3 = UIImage(named: "travels3")
     static let setupBackground = UIImage(named: "setup")
+    static let forgetPassword = UIImage(named: "forgetPassword")
   }
   
   struct Color {
@@ -42,5 +53,12 @@ struct Constant {
     static let poppinsSemibold33 = UIFont(name: "Poppins-SemiBold", size: 33)
     static let poppinsRegular16 = UIFont(name: "Poppins-Regular", size: 16)
     static let poppinsRegular12 = UIFont(name: "Poppins-Regular", size: 12)
+  }
+  
+  struct Icon {
+    static let nameField = "person.fill"
+    static let emailField = "mail.fill"
+    static let passwordField = "key.fill"
+    static let phoneField = "phone.fill"
   }
 }

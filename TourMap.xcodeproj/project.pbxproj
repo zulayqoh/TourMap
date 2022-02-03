@@ -29,6 +29,8 @@
 		CEA0709627A3DC32004C6C83 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0709527A3DC32004C6C83 /* CustomTextField.swift */; };
 		CEDAB57327A450D300138475 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDAB57227A450D300138475 /* UITextField+Extension.swift */; };
 		CEDAB57627A4752300138475 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDAB57527A4752300138475 /* SignUpModel.swift */; };
+		CEE195F027ABF867002DCE1B /* ForgetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE195EF27ABF867002DCE1B /* ForgetPasswordView.swift */; };
+		CEE195F227AC04F6002DCE1B /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE195F127AC04F6002DCE1B /* ForgetPasswordViewController.swift */; };
 		CEFEF51A279C0DF70066584C /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF519279C0DF70066584C /* SetupView.swift */; };
 		CEFEF51C279C0E690066584C /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF51B279C0E690066584C /* SetupViewController.swift */; };
 		CEFEF51F279C59D40066584C /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF51E279C59D40066584C /* TitleLabel.swift */; };
@@ -60,6 +62,8 @@
 		CEA0709527A3DC32004C6C83 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		CEDAB57227A450D300138475 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		CEDAB57527A4752300138475 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		CEE195EF27ABF867002DCE1B /* ForgetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordView.swift; sourceTree = "<group>"; };
+		CEE195F127AC04F6002DCE1B /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 		CEFEF519279C0DF70066584C /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
 		CEFEF51B279C0E690066584C /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
 		CEFEF51E279C59D40066584C /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 				CEFEF515279C0CAF0066584C /* SetupPage */,
 				CE99A00527A217B900050022 /* SignUp */,
 				CE99A00927A2180D00050022 /* SignIn */,
+				CEE195ED27ABF7DD002DCE1B /* ForgetPassword */,
 				CE184D342793381500535889 /* Main.storyboard */,
 				CE184D392793381700535889 /* LaunchScreen.storyboard */,
 				CE5D4C7F27981D3400EDC5F1 /* SupportingFiles */,
@@ -251,6 +256,23 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		CEE195ED27ABF7DD002DCE1B /* ForgetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				CEE195EE27ABF83A002DCE1B /* View */,
+			);
+			path = ForgetPassword;
+			sourceTree = "<group>";
+		};
+		CEE195EE27ABF83A002DCE1B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEE195EF27ABF867002DCE1B /* ForgetPasswordView.swift */,
+				CEE195F127AC04F6002DCE1B /* ForgetPasswordViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CEFEF515279C0CAF0066584C /* SetupPage */ = {
 			isa = PBXGroup;
 			children = (
@@ -384,10 +406,12 @@
 				CEFEF521279C59E50066584C /* CustomButton.swift in Sources */,
 				CEA0709427A3D575004C6C83 /* CustomBackgroundView.swift in Sources */,
 				CE24987627A7EF1D009222AE /* LogInView.swift in Sources */,
+				CEE195F227AC04F6002DCE1B /* ForgetPasswordViewController.swift in Sources */,
 				CE4A9D992798975200F19BD5 /* OnboardingViewModel.swift in Sources */,
 				CE5D4C762798050E00EDC5F1 /* OnboardingViewController.swift in Sources */,
 				CE99A00827A217DD00050022 /* SignUpViewController.swift in Sources */,
 				CEA0709627A3DC32004C6C83 /* CustomTextField.swift in Sources */,
+				CEE195F027ABF867002DCE1B /* ForgetPasswordView.swift in Sources */,
 				CE7EEB99279AA315006347F1 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
