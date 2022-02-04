@@ -32,7 +32,7 @@ class SetupViewController: UIViewController {
     ])
   }
   @objc func loginButtonClicked() {
-    navigationController?.pushViewController(SignInViewController(), animated: true)
+    navigationController?.pushViewController(LogInViewController(), animated: true)
   }
   
 }
