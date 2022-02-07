@@ -8,7 +8,9 @@
 import Foundation
 import UIKit
 
-//struct SignUpViewData {
-//  let modelName: Array<String>
-//  let iconName: Array<String>
-//}
+struct SignUpData {
+  let userName: String
+  let emailAddress: String
+  let password: String
+  let confirmPassword: String
+}
