@@ -66,4 +66,12 @@ struct Constant {
     static let passwordField = "key.fill"
     static let phoneField = "phone.fill"
   }
+  
+  struct ValidateText {
+    static let success = "Your registration is successful"
+    static let invalidName = "Invalid Name"
+    static let invalidEmail = "Invalid Email"
+    static let invalidPassword = "Invalid Password"
+    static let passwordNotEqual = "Passwords should be the same"
+  }
 }

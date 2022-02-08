@@ -9,15 +9,16 @@ import UIKit
 
 class SignUpViewController: UIViewController {
   let signUpPage = SignUpView()
+  let signUpViewModel = SignUpViewModel()
   
   override func viewDidLoad() {
     super.viewDidLoad()
     view.backgroundColor = .white
-    
     configureSignInPage()
   }
+  
   func configureSignInPage() {
-
+    signUpPage.signUpButton.addTarget(self, action: #selector(signUpButtonClicked), for: .touchUpInside)
     signUpPage.translatesAutoresizingMaskIntoConstraints = false
     view.addSubview(signUpPage)
 
@@ -29,4 +30,21 @@ class SignUpViewController: UIViewController {
     ])
   }
   
+  @objc func signUpButtonClicked() {
+    var alertController: UIAlertController
+    var message: String
+    
+    guard let name = signUpPage.nameTextField.text, let email = signUpPage.emailTextField.text, let password = signUpPage.passwordTextField.text, let confirmPassword = signUpPage.confirmPasswordTextField.text else { return }
+    
+    let signUpCredentials = signUpViewModel.validateUserSignUpDetails(name: name, email: email, password: password, confirmPassword: confirmPassword)
+    
+    if signUpCredentials.isValidUserDetail {
+      message = signUpCredentials.message
+    } else {
+      message = signUpCredentials.message
+      }
+    alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+    alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+    self.present(alertController, animated: false, completion: nil)
+  }
 }
