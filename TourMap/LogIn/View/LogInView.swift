@@ -15,18 +15,16 @@ class LogInView: UIView {
   let logInButton = CustomButton()
   let emailTextField = CustomTextField()
   let passwordTextField = CustomTextField()
-  let fieldName = ["Email", "Password"]
-  let iconName = ["mail.fill", "key.fill"]
   
   let logInBackgroundImageView: UIImageView = {
     let imageView = UIImageView()
-    imageView.image = UIImage(named: "signin")
+    imageView.image = Constant.Image.logIn
     return imageView
   }()
   
   private lazy var forgotPasswordButton: UIButton = {
     let button = UIButton()
-    button.setTitle("Forgot password ?", for: .normal)
+    button.setTitle(Constant.StringContent.forgotPassword, for: .normal)
     button.setTitleColor(UIColor(red:0.74, green:0.74, blue:0.74, alpha:1.0), for: .normal)
     button.titleLabel?.font = Constant.Font.poppinsRegular12
     button.translatesAutoresizingMaskIntoConstraints = false
@@ -92,8 +90,8 @@ class LogInView: UIView {
   
   func addEmailTextField() {
     logInFieldView.addSubview(emailTextField)
-    emailTextField.placeholder = fieldName[0]
-    emailTextField.setRightImage(imageName: iconName[0])
+    emailTextField.placeholder = Constant.StringContent.email
+    emailTextField.setRightImage(imageName: Constant.Icon.emailField)
     emailTextField.rightView?.tintColor = Constant.Color.textFieldIconColor
     
     NSLayoutConstraint.activate([
@@ -106,8 +104,8 @@ class LogInView: UIView {
   
   func addPasswordTextField() {
     logInFieldView.addSubview(passwordTextField)
-    passwordTextField.placeholder = fieldName[1]
-    passwordTextField.setRightImage(imageName: iconName[1])
+    passwordTextField.placeholder = Constant.StringContent.password
+    passwordTextField.setRightImage(imageName: Constant.Icon.passwordField)
     passwordTextField.rightView?.tintColor = Constant.Color.textFieldIconColor
     
     NSLayoutConstraint.activate([

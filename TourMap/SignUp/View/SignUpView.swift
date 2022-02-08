@@ -11,13 +11,14 @@ class SignUpView: UIView {
   let signUpTitleLabel = TitleLabel()
   let backgroundView = CustomBackgroundView()
   let signUpButton = CustomButton()
-  let inputTextField = CustomTextField()
-  let modelName = ["Name", "Email", "Password", "Confirm password"]
-  let iconName = ["person.fill", "phone.fill", "key.fill", "key.fill"]
+  let nameTextField = CustomTextField()
+  let emailTextField = CustomTextField()
+  let passwordTextField = CustomTextField()
+  let confirmPasswordTextField = CustomTextField()
   
   let imageView: UIImageView = {
     let imageView = UIImageView()
-    imageView.image = UIImage(named: "signup")
+    imageView.image = Constant.Image.signUp
     return imageView
   }()
   
@@ -78,36 +79,70 @@ class SignUpView: UIView {
     ])
   }
   
-  func addInputTextField() {
-    var topConstraint: CGFloat = 20
-    for index in 0..<modelName.count {
-      let inputTextField = CustomTextField()
-      inputTextField.placeholder = modelName[index]
-      inputTextField.setRightImage(imageName: iconName[index])
-      
-      inputTextField.translatesAutoresizingMaskIntoConstraints = false
-      backgroundView.addSubview(inputTextField)
-      inputTextField.rightView?.tintColor = Constant.Color.textFieldIconColor
-      
-      if index > 0 {
-        topConstraint = topConstraint + 70
-      }
-      
-      NSLayoutConstraint.activate([
-        inputTextField.topAnchor.constraint(equalTo: backgroundView.topAnchor, constant: topConstraint),
-        inputTextField.centerXAnchor.constraint(equalTo: backgroundView.centerXAnchor),
-        inputTextField.widthAnchor.constraint(equalTo: backgroundView.widthAnchor, multiplier: 0.9),
-        inputTextField.heightAnchor.constraint(equalToConstant: 50)
-      ])
-    }
+  func addNameTextField() {
+    backgroundView.addSubview(nameTextField)
+    nameTextField.placeholder = Constant.StringContent.name
+    nameTextField.setRightImage(imageName: Constant.Icon.nameField)
+    nameTextField.rightView?.tintColor = Constant.Color.textFieldIconColor
+    
+    NSLayoutConstraint.activate([
+      nameTextField.topAnchor.constraint(equalTo: backgroundView.topAnchor, constant: 20),
+      nameTextField.centerXAnchor.constraint(equalTo: backgroundView.centerXAnchor),
+      nameTextField.widthAnchor.constraint(equalTo: backgroundView.widthAnchor, multiplier: 0.9),
+      nameTextField.heightAnchor.constraint(equalToConstant: 50)
+    ])
+  }
+  
+  func addEmailTextField() {
+    backgroundView.addSubview(emailTextField)
+    emailTextField.placeholder = Constant.StringContent.email
+    emailTextField.setRightImage(imageName: Constant.Icon.emailField)
+    emailTextField.rightView?.tintColor = Constant.Color.textFieldIconColor
+    
+    NSLayoutConstraint.activate([
+      emailTextField.topAnchor.constraint(equalTo: nameTextField.bottomAnchor, constant: 20),
+      emailTextField.centerXAnchor.constraint(equalTo: backgroundView.centerXAnchor),
+      emailTextField.widthAnchor.constraint(equalTo: backgroundView.widthAnchor, multiplier: 0.9),
+      emailTextField.heightAnchor.constraint(equalToConstant: 50)
+    ])
+  }
+  
+  func addPasswordTextField() {
+    backgroundView.addSubview(passwordTextField)
+    passwordTextField.placeholder = Constant.StringContent.password
+    passwordTextField.setRightImage(imageName: Constant.Icon.passwordField)
+    passwordTextField.rightView?.tintColor = Constant.Color.textFieldIconColor
+    
+    NSLayoutConstraint.activate([
+      passwordTextField.topAnchor.constraint(equalTo: emailTextField.bottomAnchor, constant: 20),
+      passwordTextField.centerXAnchor.constraint(equalTo: backgroundView.centerXAnchor),
+      passwordTextField.widthAnchor.constraint(equalTo: backgroundView.widthAnchor, multiplier: 0.9),
+      passwordTextField.heightAnchor.constraint(equalToConstant: 50)
+    ])
+  }
+  
+  func addConfirmPasswordTextField() {
+    backgroundView.addSubview(confirmPasswordTextField)
+    confirmPasswordTextField.placeholder = Constant.StringContent.confirmPassword
+    confirmPasswordTextField.setRightImage(imageName: Constant.Icon.passwordField)
+    confirmPasswordTextField.rightView?.tintColor = Constant.Color.textFieldIconColor
+    
+    NSLayoutConstraint.activate([
+      confirmPasswordTextField.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 20),
+      confirmPasswordTextField.centerXAnchor.constraint(equalTo: backgroundView.centerXAnchor),
+      confirmPasswordTextField.widthAnchor.constraint(equalTo: backgroundView.widthAnchor, multiplier: 0.9),
+      confirmPasswordTextField.heightAnchor.constraint(equalToConstant: 50)
+    ])
   }
   
   private func addSignUpViews() {
     addSignUpLabel()
     addImageView()
     addBackgroundView()
+    addNameTextField()
+    addEmailTextField()
+    addPasswordTextField()
+    addConfirmPasswordTextField()
     addSignUpButton()
-    addInputTextField()
-  }
-  
+  }  
 }

@@ -24,6 +24,7 @@ struct Constant {
     static let login = "Login"
     static let signUp = "Sign Up"
     static let forgetPassword = "Forget Password"
+    static let forgotPassword = "Forgot password ?"
     static let send = "Send"
     static let verificationCode = "Verification code"
     static let verify = "Verify"
@@ -41,6 +42,8 @@ struct Constant {
     static let onboardingImage3 = UIImage(named: "travels3")
     static let setupBackground = UIImage(named: "setup")
     static let forgetPassword = UIImage(named: "forgetPassword")
+    static let signUp = UIImage(named: "signup")
+    static let logIn = UIImage(named: "signin")
     static let verify = UIImage(named: "verify")
   }
   
