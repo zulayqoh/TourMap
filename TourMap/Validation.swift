@@ -18,7 +18,7 @@ class Validation {
   }
   //MARK:- UserName Validation
   func isValidName(name: String) -> Bool {
-    let regex = "[A-Za-z]{2,}"
+    let regex = "^[a-zA-Z]{4,}(?: [a-zA-Z]+)?(?: [a-zA-Z]+)?$"
     let testPredicate = NSPredicate(format: "SELF MATCHES %@", regex)
     let result = testPredicate.evaluate(with: name)
     return result
