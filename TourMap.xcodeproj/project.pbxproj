@@ -25,7 +25,8 @@
 		CE69E32927AE74B7000AA9F2 /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69E32827AE74B7000AA9F2 /* LogInViewModel.swift */; };
 		CE69E32B27B086F7000AA9F2 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69E32A27B086F7000AA9F2 /* SignUpViewModel.swift */; };
 		CE7EEB99279AA315006347F1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7EEB98279AA315006347F1 /* Constants.swift */; };
-		CE87080627B3B52A0075EE94 /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE87080527B3B52A0075EE94 /* GoogleService-Info-2.plist */; };
+		CE87080627B3B52A0075EE94 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE87080527B3B52A0075EE94 /* GoogleService-Info.plist */; };
+		CE87080927B3C76F0075EE94 /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE87080827B3C76F0075EE94 /* FirebaseAuthManager.swift */; };
 		CE99A00827A217DD00050022 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99A00727A217DD00050022 /* SignUpViewController.swift */; };
 		CE99A00C27A2182600050022 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99A00B27A2182600050022 /* LogInViewController.swift */; };
 		CE99A00E27A2201200050022 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99A00D27A2201200050022 /* SignUpView.swift */; };
@@ -68,7 +69,8 @@
 		CE69E32827AE74B7000AA9F2 /* LogInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
 		CE69E32A27B086F7000AA9F2 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		CE7EEB98279AA315006347F1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		CE87080527B3B52A0075EE94 /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
+		CE87080527B3B52A0075EE94 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE87080827B3C76F0075EE94 /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
 		CE99A00727A217DD00050022 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CE99A00B27A2182600050022 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		CE99A00D27A2201200050022 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -114,7 +116,6 @@
 				91DDC646F6DAD55272F6150A /* Pods-TourMap.debug.xcconfig */,
 				09D0D469118D2F9244C9BD94 /* Pods-TourMap.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -139,6 +140,7 @@
 		CE184D2D2793381500535889 /* TourMap */ = {
 			isa = PBXGroup;
 			children = (
+				CE87080727B3C74F0075EE94 /* Services */,
 				CEE195F527AC1BD9002DCE1B /* VerificationPage */,
 				CE650765279966C7008F1717 /* AppDelegates */,
 				CE5D4C802798211600EDC5F1 /* Resources */,
@@ -152,8 +154,8 @@
 				CEE195ED27ABF7DD002DCE1B /* ForgetPassword */,
 				CE184D342793381500535889 /* Main.storyboard */,
 				CE184D392793381700535889 /* LaunchScreen.storyboard */,
+				CE87080527B3B52A0075EE94 /* GoogleService-Info.plist */,
 				CE5D4C7F27981D3400EDC5F1 /* SupportingFiles */,
-				CE69E32627ADF782000AA9F2 /* Validation.swift */,
 			);
 			path = TourMap;
 			sourceTree = "<group>";
@@ -222,7 +224,6 @@
 			isa = PBXGroup;
 			children = (
 				CE184D3C2793381700535889 /* Info.plist */,
-				CE87080527B3B52A0075EE94 /* GoogleService-Info-2.plist */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -261,6 +262,15 @@
 				CE7EEB98279AA315006347F1 /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CE87080727B3C74F0075EE94 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE87080827B3C76F0075EE94 /* FirebaseAuthManager.swift */,
+				CE69E32627ADF782000AA9F2 /* Validation.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		CE99A00527A217B900050022 /* SignUp */ = {
@@ -458,7 +468,7 @@
 				CEA0709027A3D336004C6C83 /* Poppins-SemiBold.ttf in Resources */,
 				CEA0709227A3D35B004C6C83 /* Poppins-Bold.ttf in Resources */,
 				CE184D3B2793381700535889 /* LaunchScreen.storyboard in Resources */,
-				CE87080627B3B52A0075EE94 /* GoogleService-Info-2.plist in Resources */,
+				CE87080627B3B52A0075EE94 /* GoogleService-Info.plist in Resources */,
 				CE184D382793381700535889 /* Assets.xcassets in Resources */,
 				CE184D362793381500535889 /* Main.storyboard in Resources */,
 				CE5D4CAC27982AEB00EDC5F1 /* Poppins-Regular.ttf in Resources */,
@@ -540,6 +550,7 @@
 				CEA0709627A3DC32004C6C83 /* CustomTextField.swift in Sources */,
 				CEE195F027ABF867002DCE1B /* ForgetPasswordView.swift in Sources */,
 				CE7EEB99279AA315006347F1 /* Constants.swift in Sources */,
+				CE87080927B3C76F0075EE94 /* FirebaseAuthManager.swift in Sources */,
 				CE69E32927AE74B7000AA9F2 /* LogInViewModel.swift in Sources */,
 				CEE195F827AC1C3F002DCE1B /* VerificationPageView.swift in Sources */,
 			);

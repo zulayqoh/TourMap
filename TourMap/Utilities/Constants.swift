@@ -73,5 +73,7 @@ struct Constant {
     static let invalidEmail = "Invalid Email"
     static let invalidPassword = "Invalid Password"
     static let passwordNotEqual = "Passwords should be the same"
+    static let signUpSuccess = "Your registration was successful"
+    static let signUpError = "An error occurred"
   }
 }
