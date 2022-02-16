@@ -36,25 +36,27 @@ class SignUpViewController: UIViewController {
     var message = String()
     
     if let name = signUpPage.nameTextField.text, let email = signUpPage.emailTextField.text, let password = signUpPage.passwordTextField.text, let confirmPassword = signUpPage.confirmPasswordTextField.text {
+      let userData = SignUpData(userName: name, emailAddress: email, password: password, confirmPassword: confirmPassword)
       
-      let signUpCredentials = signUpViewModel.validateUserSignUpDetails(name: name, email: email, password: password, confirmPassword: confirmPassword)
-      if signUpCredentials.isValidUserDetail {
-        signUpManager.createUser(email: email, password: password) { [weak self] success in
-          guard let `self` = self else { return }
-          if success {
-            message = Constant.ValidateText.signUpSuccess
-          } else {
-            message = Constant.ValidateText.signUpError
+      signUpViewModel.validateUserSignUpDetails(with: userData) { isValidUser, alertMessage in
+        if isValidUser {
+          signUpManager.createUser(email: email, password: password) { [weak self] success in
+            guard let `self` = self else { return }
+            if success {
+              message = Constant.ValidateText.signUpSuccess
+            } else {
+              message = Constant.ValidateText.signUpError
+            }
+            alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            self.present(alertController, animated: false, completion: nil)
           }
+        } else {
+          message = alertMessage
           alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
           alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
           self.present(alertController, animated: false, completion: nil)
         }
-      } else {
-        message = signUpCredentials.message
-        alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-        self.present(alertController, animated: false, completion: nil)
       }
     }
   }
