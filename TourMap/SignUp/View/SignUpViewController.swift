@@ -10,6 +10,7 @@ import UIKit
 class SignUpViewController: UIViewController {
   let signUpPage = SignUpView()
   let signUpViewModel = SignUpViewModel()
+  var validation = Validation()
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -30,33 +31,34 @@ class SignUpViewController: UIViewController {
     ])
   }
   
+  func validateTextField() {
+   
+  }
+  
   @objc func signUpButtonClicked() {
-    let signUpManager = FirebaseAuthManager()
-    var alertController = UIAlertController()
-    var message = String()
-    
-    if let name = signUpPage.nameTextField.text, let email = signUpPage.emailTextField.text, let password = signUpPage.passwordTextField.text, let confirmPassword = signUpPage.confirmPasswordTextField.text {
-      let userData = SignUpData(userName: name, emailAddress: email, password: password, confirmPassword: confirmPassword)
-      
-      signUpViewModel.validateUserSignUpDetails(with: userData) { isValidUser, alertMessage in
-        if isValidUser {
-          signUpManager.createUser(email: email, password: password) { [weak self] success in
-            guard let `self` = self else { return }
-            if success {
-              message = Constant.ValidateText.signUpSuccess
-            } else {
-              message = Constant.ValidateText.signUpError
-            }
-            alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
-            alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-            self.present(alertController, animated: false, completion: nil)
-          }
-        } else {
-          message = alertMessage
-          alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
-          alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-          self.present(alertController, animated: false, completion: nil)
-        }
+    guard let name = signUpPage.nameTextField.text, validation.isValidName(name: name) else {
+      self.showAlertMessage(message: SignUpError.nameNotValid.localizedDescription)
+      return
+    }
+    guard let email = signUpPage.emailTextField.text, validation.isValidEmail(email: email) else {
+      self.showAlertMessage(message: SignUpError.emailNotValid.localizedDescription)
+      return
+    }
+    guard let password = signUpPage.passwordTextField.text, validation.isValidPassword(password: password) else {
+      self.showAlertMessage(message: SignUpError.passwordNotValid.localizedDescription)
+      return
+    }
+    let confirmPassword = signUpPage.confirmPasswordTextField.text ?? ""
+    if password != confirmPassword {
+      self.showAlertMessage(message: SignUpError.passwordsNotEqual.localizedDescription)
+      return
+    }
+    signUpViewModel.createUserAccount(with: SignUpData(userName: name, emailAddress: email, password: password, confirmPassword: confirmPassword)) { success in
+      switch success {
+      case true:
+        self.showAlertMessage(message: Constant.Authentication.signUpSuccess)
+      case false:
+        self.showAlertMessage(message: Constant.Authentication.signUpError)
       }
     }
   }

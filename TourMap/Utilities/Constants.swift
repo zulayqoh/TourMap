@@ -67,13 +67,27 @@ struct Constant {
     static let phoneField = "phone.fill"
   }
   
-  struct ValidateText {
-    static let success = "Your registration is successful"
-    static let invalidName = "Invalid Name"
-    static let invalidEmail = "Invalid Email"
-    static let invalidPassword = "Invalid Password"
-    static let passwordNotEqual = "Passwords should be the same"
+  struct Authentication {
     static let signUpSuccess = "Your registration was successful"
-    static let signUpError = "An error occurred"
+    static let signUpError = "An error occurred signing up"
+  }
+}
+
+enum SignUpError: Error, LocalizedError {
+  case nameNotValid
+  case emailNotValid
+  case passwordNotValid
+  case passwordsNotEqual
+  public var errorDescription: String? {
+         switch self {
+         case .nameNotValid:
+             return "Invalid Name"
+         case .emailNotValid:
+             return "Invalid Email"
+         case .passwordNotValid:
+             return"Invalid Password"
+         case .passwordsNotEqual:
+             return "Password should be the same"
+         }
   }
 }
