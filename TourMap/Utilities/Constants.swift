@@ -66,4 +66,28 @@ struct Constant {
     static let passwordField = "key.fill"
     static let phoneField = "phone.fill"
   }
+  
+  struct Authentication {
+    static let signUpSuccess = "Your registration was successful"
+    static let signUpError = "An error occurred signing up"
+  }
+}
+
+enum SignUpError: Error, LocalizedError {
+  case nameNotValid
+  case emailNotValid
+  case passwordNotValid
+  case passwordsNotEqual
+  public var errorDescription: String? {
+         switch self {
+         case .nameNotValid:
+             return "Invalid Name"
+         case .emailNotValid:
+             return "Invalid Email"
+         case .passwordNotValid:
+             return"Invalid Password"
+         case .passwordsNotEqual:
+             return "Password should be the same"
+         }
+  }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F61A5C072396A04983DAFC7 /* Pods_TourMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 263162708C2696E384F78E7E /* Pods_TourMap.framework */; };
 		CE184D2F2793381500535889 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE184D2E2793381500535889 /* AppDelegate.swift */; };
 		CE184D312793381500535889 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE184D302793381500535889 /* SceneDelegate.swift */; };
 		CE184D362793381500535889 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE184D342793381500535889 /* Main.storyboard */; };
@@ -24,6 +25,8 @@
 		CE69E32927AE74B7000AA9F2 /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69E32827AE74B7000AA9F2 /* LogInViewModel.swift */; };
 		CE69E32B27B086F7000AA9F2 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69E32A27B086F7000AA9F2 /* SignUpViewModel.swift */; };
 		CE7EEB99279AA315006347F1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7EEB98279AA315006347F1 /* Constants.swift */; };
+		CE87080627B3B52A0075EE94 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE87080527B3B52A0075EE94 /* GoogleService-Info.plist */; };
+		CE87080927B3C76F0075EE94 /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE87080827B3C76F0075EE94 /* FirebaseAuthManager.swift */; };
 		CE99A00827A217DD00050022 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99A00727A217DD00050022 /* SignUpViewController.swift */; };
 		CE99A00C27A2182600050022 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99A00B27A2182600050022 /* LogInViewController.swift */; };
 		CE99A00E27A2201200050022 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99A00D27A2201200050022 /* SignUpView.swift */; };
@@ -31,6 +34,7 @@
 		CEA0709227A3D35B004C6C83 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEA0709127A3D35B004C6C83 /* Poppins-Bold.ttf */; };
 		CEA0709427A3D575004C6C83 /* CustomBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0709327A3D575004C6C83 /* CustomBackgroundView.swift */; };
 		CEA0709627A3DC32004C6C83 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0709527A3DC32004C6C83 /* CustomTextField.swift */; };
+		CEA5AA2227C024BF005C2B3C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5AA2127C024BF005C2B3C /* UIViewController+Extension.swift */; };
 		CEDAB57327A450D300138475 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDAB57227A450D300138475 /* UITextField+Extension.swift */; };
 		CEDAB57627A4752300138475 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDAB57527A4752300138475 /* SignUpModel.swift */; };
 		CEE195F027ABF867002DCE1B /* ForgetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE195EF27ABF867002DCE1B /* ForgetPasswordView.swift */; };
@@ -44,6 +48,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09D0D469118D2F9244C9BD94 /* Pods-TourMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TourMap.release.xcconfig"; path = "Target Support Files/Pods-TourMap/Pods-TourMap.release.xcconfig"; sourceTree = "<group>"; };
+		263162708C2696E384F78E7E /* Pods_TourMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TourMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91DDC646F6DAD55272F6150A /* Pods-TourMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TourMap.debug.xcconfig"; path = "Target Support Files/Pods-TourMap/Pods-TourMap.debug.xcconfig"; sourceTree = "<group>"; };
 		CE184D2B2793381500535889 /* TourMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE184D2E2793381500535889 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE184D302793381500535889 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +70,8 @@
 		CE69E32827AE74B7000AA9F2 /* LogInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
 		CE69E32A27B086F7000AA9F2 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		CE7EEB98279AA315006347F1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CE87080527B3B52A0075EE94 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE87080827B3C76F0075EE94 /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
 		CE99A00727A217DD00050022 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CE99A00B27A2182600050022 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		CE99A00D27A2201200050022 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -70,6 +79,7 @@
 		CEA0709127A3D35B004C6C83 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		CEA0709327A3D575004C6C83 /* CustomBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackgroundView.swift; sourceTree = "<group>"; };
 		CEA0709527A3DC32004C6C83 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		CEA5AA2127C024BF005C2B3C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		CEDAB57227A450D300138475 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		CEDAB57527A4752300138475 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
 		CEE195EF27ABF867002DCE1B /* ForgetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordView.swift; sourceTree = "<group>"; };
@@ -87,17 +97,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F61A5C072396A04983DAFC7 /* Pods_TourMap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		170E024A6DFE4D6D53ACA7DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				263162708C2696E384F78E7E /* Pods_TourMap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		85F042BBDA7A2BCD661EBAC7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91DDC646F6DAD55272F6150A /* Pods-TourMap.debug.xcconfig */,
+				09D0D469118D2F9244C9BD94 /* Pods-TourMap.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CE184D222793381500535889 = {
 			isa = PBXGroup;
 			children = (
 				CE184D2D2793381500535889 /* TourMap */,
 				CE184D2C2793381500535889 /* Products */,
+				85F042BBDA7A2BCD661EBAC7 /* Pods */,
+				170E024A6DFE4D6D53ACA7DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,10 +142,10 @@
 		CE184D2D2793381500535889 /* TourMap */ = {
 			isa = PBXGroup;
 			children = (
-				CEE195F527AC1BD9002DCE1B /* VerificationPage */,
 				CE650765279966C7008F1717 /* AppDelegates */,
 				CE5D4C802798211600EDC5F1 /* Resources */,
 				CE7EEB9A279AE2F7006347F1 /* Utilities */,
+				CE87080727B3C74F0075EE94 /* Services */,
 				CEFEF51D279C59A20066584C /* CustomViews */,
 				CE5D4C77279807A000EDC5F1 /* Extensions */,
 				CE5D4C74279804CD00EDC5F1 /* Onboarding */,
@@ -123,10 +153,11 @@
 				CE99A00527A217B900050022 /* SignUp */,
 				CE99A00927A2180D00050022 /* LogIn */,
 				CEE195ED27ABF7DD002DCE1B /* ForgetPassword */,
+				CEE195F527AC1BD9002DCE1B /* VerificationPage */,
 				CE184D342793381500535889 /* Main.storyboard */,
 				CE184D392793381700535889 /* LaunchScreen.storyboard */,
+				CE87080527B3B52A0075EE94 /* GoogleService-Info.plist */,
 				CE5D4C7F27981D3400EDC5F1 /* SupportingFiles */,
-				CE69E32627ADF782000AA9F2 /* Validation.swift */,
 			);
 			path = TourMap;
 			sourceTree = "<group>";
@@ -187,6 +218,7 @@
 			children = (
 				CE5D4C792798087100EDC5F1 /* UIView+Extension.swift */,
 				CEDAB57227A450D300138475 /* UITextField+Extension.swift */,
+				CEA5AA2127C024BF005C2B3C /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -233,6 +265,15 @@
 				CE7EEB98279AA315006347F1 /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CE87080727B3C74F0075EE94 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE87080827B3C76F0075EE94 /* FirebaseAuthManager.swift */,
+				CE69E32627ADF782000AA9F2 /* Validation.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		CE99A00527A217B900050022 /* SignUp */ = {
@@ -374,9 +415,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE184D3F2793381700535889 /* Build configuration list for PBXNativeTarget "TourMap" */;
 			buildPhases = (
+				38DD11923EB49DDE73284B7B /* [CP] Check Pods Manifest.lock */,
 				CE184D272793381500535889 /* Sources */,
 				CE184D282793381500535889 /* Frameworks */,
 				CE184D292793381500535889 /* Resources */,
+				1C1EBAA233C99D1B008C6A59 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -428,6 +471,7 @@
 				CEA0709027A3D336004C6C83 /* Poppins-SemiBold.ttf in Resources */,
 				CEA0709227A3D35B004C6C83 /* Poppins-Bold.ttf in Resources */,
 				CE184D3B2793381700535889 /* LaunchScreen.storyboard in Resources */,
+				CE87080627B3B52A0075EE94 /* GoogleService-Info.plist in Resources */,
 				CE184D382793381700535889 /* Assets.xcassets in Resources */,
 				CE184D362793381500535889 /* Main.storyboard in Resources */,
 				CE5D4CAC27982AEB00EDC5F1 /* Poppins-Regular.ttf in Resources */,
@@ -435,6 +479,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C1EBAA233C99D1B008C6A59 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TourMap/Pods-TourMap-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TourMap/Pods-TourMap-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TourMap/Pods-TourMap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38DD11923EB49DDE73284B7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TourMap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE184D272793381500535889 /* Sources */ = {
@@ -459,6 +545,7 @@
 				CEFEF521279C59E50066584C /* CustomButton.swift in Sources */,
 				CEA0709427A3D575004C6C83 /* CustomBackgroundView.swift in Sources */,
 				CE4CF19B27B1331C008026B1 /* LogInModel.swift in Sources */,
+				CEA5AA2227C024BF005C2B3C /* UIViewController+Extension.swift in Sources */,
 				CE24987627A7EF1D009222AE /* LogInView.swift in Sources */,
 				CEE195F227AC04F6002DCE1B /* ForgetPasswordViewController.swift in Sources */,
 				CE4A9D992798975200F19BD5 /* OnboardingViewModel.swift in Sources */,
@@ -467,6 +554,7 @@
 				CEA0709627A3DC32004C6C83 /* CustomTextField.swift in Sources */,
 				CEE195F027ABF867002DCE1B /* ForgetPasswordView.swift in Sources */,
 				CE7EEB99279AA315006347F1 /* Constants.swift in Sources */,
+				CE87080927B3C76F0075EE94 /* FirebaseAuthManager.swift in Sources */,
 				CE69E32927AE74B7000AA9F2 /* LogInViewModel.swift in Sources */,
 				CEE195F827AC1C3F002DCE1B /* VerificationPageView.swift in Sources */,
 			);
@@ -612,6 +700,7 @@
 		};
 		CE184D402793381700535889 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91DDC646F6DAD55272F6150A /* Pods-TourMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -639,6 +728,7 @@
 		};
 		CE184D412793381700535889 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09D0D469118D2F9244C9BD94 /* Pods-TourMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

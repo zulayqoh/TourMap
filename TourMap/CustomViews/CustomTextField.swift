@@ -26,6 +26,8 @@ class CustomTextField: UITextField {
     addLine(position: .bottom, color: .darkGray, width: 0.5)
     attributedPlaceholder = NSAttributedString(string:"Enter Title", attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])
     font = Constant.Font.poppinsRegular16
+    autocorrectionType = .no
+    autocapitalizationType = .none
     
   }
 }
